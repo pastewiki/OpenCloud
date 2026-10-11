@@ -2,7 +2,7 @@
  * Example 2: read a data store entry.
  * API key permission: universe-datastores.objects:read
  */
-import { NotFoundError, RobloxOpenCloud } from "@roblox-open-cloud/sdk";
+import { NotFoundError, RobloxOpenCloud } from "roblox-open-cloud-sdk";
 
 interface PlayerProfile {
   coins: number;

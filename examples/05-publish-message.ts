@@ -5,7 +5,7 @@
  * In your experience, subscribe with:
  *   MessagingService:SubscribeAsync("announcements", function(message) ... end)
  */
-import { RobloxOpenCloud } from "@roblox-open-cloud/sdk";
+import { RobloxOpenCloud } from "roblox-open-cloud-sdk";
 
 const roblox = RobloxOpenCloud.fromEnv();
 

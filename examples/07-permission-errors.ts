@@ -6,7 +6,7 @@ import {
   AuthenticationError,
   PermissionError,
   RobloxOpenCloud,
-} from "@roblox-open-cloud/sdk";
+} from "roblox-open-cloud-sdk";
 
 const roblox = RobloxOpenCloud.fromEnv();
 

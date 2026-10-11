@@ -1,5 +1,5 @@
 {
-  "name": "@roblox-open-cloud/sdk",
+  "name": "roblox-open-cloud-sdk",
   "version": "0.1.0",
   "description": "Typed, server-side TypeScript SDK for the Roblox Open Cloud API (unofficial).",
   "license": "MIT",

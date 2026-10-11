@@ -1,10 +1,9 @@
 # OpenCloud
 
-`@roblox-open-cloud/sdk` is a typed TypeScript SDK for the [Roblox Open Cloud API](https://create.roblox.com/docs/cloud), for
+`roblox-open-cloud-sdk` is a typed TypeScript SDK for the [Roblox Open Cloud API](https://create.roblox.com/docs/cloud), for
 Node.js backends, automation scripts, CI/CD pipelines, and developer tools.
 
-> **Unofficial.** This project is not affiliated with or endorsed by Roblox. It is **not yet
-> published to npm**. The package name is a placeholder until a name is claimed.
+> **Unofficial.** This project is not affiliated with or endorsed by Roblox.
 
 - One client with a consistent, autocompleting interface across services
 - Centralized auth (API key or OAuth 2.0 bearer token) with secret redaction
@@ -49,28 +48,23 @@ The [coverage matrix](docs/coverage.md) lists every in-scope operation, implemen
 
 ## Installation
 
-The package is not on npm yet. To use it today, build it and install it from a local tarball:
+```bash
+npm install roblox-open-cloud-sdk
+```
+
+To build from source instead:
 
 ```bash
 git clone https://github.com/pastewiki/OpenCloud.git
 cd OpenCloud
 npm ci
 npm run build
-npm pack
 ```
-
-Then, in your project:
-
-```bash
-npm install ../OpenCloud/roblox-open-cloud-sdk-0.1.0.tgz
-```
-
-Once published, this becomes `npm install @roblox-open-cloud/sdk`.
 
 ## Quick start
 
 ```ts
-import { RobloxOpenCloud } from "@roblox-open-cloud/sdk";
+import { RobloxOpenCloud } from "roblox-open-cloud-sdk";
 
 // Reads ROBLOX_OPEN_CLOUD_API_KEY from the environment.
 const roblox = RobloxOpenCloud.fromEnv();
@@ -244,7 +238,7 @@ errors), `message`, `details`, `requestId`, `retryAfterMs`, `rateLimit`, `method
 parsed `body`. `toJSON()` returns a log-safe summary.
 
 ```ts
-import { ApiError, NotFoundError, PermissionError } from "@roblox-open-cloud/sdk";
+import { ApiError, NotFoundError, PermissionError } from "roblox-open-cloud-sdk";
 
 try {
   await roblox.dataStores.getEntry({ universeId, dataStoreId: "Profiles", entryId: "p1" });
@@ -397,7 +391,6 @@ The examples are type-checked and linted in CI. They haven't been run against a 
   flow or token refresh.
 - **Integration tests haven't been run against live Roblox** for this release. Unit tests cover the
   request and response contracts as documented.
-- **Not published to npm**, and the package name is unclaimed.
 
 ## Roadmap
 

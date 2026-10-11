@@ -2,7 +2,7 @@
  * Example 3: write data store entries.
  * API key permissions: universe-datastores.objects:create and universe-datastores.objects:update
  */
-import { RobloxOpenCloud } from "@roblox-open-cloud/sdk";
+import { RobloxOpenCloud } from "roblox-open-cloud-sdk";
 
 const roblox = RobloxOpenCloud.fromEnv();
 const universeId = process.env.ROBLOX_UNIVERSE_ID!;

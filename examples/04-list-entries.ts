@@ -2,7 +2,7 @@
  * Example 4: list entries with pagination.
  * API key permissions: universe-datastores.objects:list, universe-datastores.control:list
  */
-import { RobloxOpenCloud } from "@roblox-open-cloud/sdk";
+import { RobloxOpenCloud } from "roblox-open-cloud-sdk";
 
 const roblox = RobloxOpenCloud.fromEnv();
 const universeId = process.env.ROBLOX_UNIVERSE_ID!;

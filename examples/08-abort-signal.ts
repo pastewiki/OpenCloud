@@ -1,7 +1,7 @@
 /**
  * Example 8: cancel requests with AbortSignal.
  */
-import { AbortError, RobloxOpenCloud, TimeoutError } from "@roblox-open-cloud/sdk";
+import { AbortError, RobloxOpenCloud, TimeoutError } from "roblox-open-cloud-sdk";
 
 const roblox = RobloxOpenCloud.fromEnv();
 const universeId = process.env.ROBLOX_UNIVERSE_ID!;

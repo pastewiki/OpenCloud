@@ -5,7 +5,7 @@
  *   node examples/01-create-client.ts        # Node 22.18+ runs TypeScript directly
  *   npx tsx examples/01-create-client.ts     # Node 20
  */
-import { RobloxOpenCloud } from "@roblox-open-cloud/sdk";
+import { RobloxOpenCloud } from "roblox-open-cloud-sdk";
 
 // Option A: read ROBLOX_OPEN_CLOUD_API_KEY from the environment.
 const roblox = RobloxOpenCloud.fromEnv({

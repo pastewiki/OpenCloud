@@ -17,7 +17,7 @@
     "forceConsistentCasingInFileNames": true,
     "types": ["node"],
     "paths": {
-      "@roblox-open-cloud/sdk": ["./src/index.ts"]
+      "roblox-open-cloud-sdk": ["./src/index.ts"]
     },
     "rootDir": "."
   },

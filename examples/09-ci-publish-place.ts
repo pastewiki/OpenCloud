@@ -9,7 +9,7 @@
  * docs/ci-cd.md has a GitHub Actions workflow that runs this script.
  */
 import { readFile } from "node:fs/promises";
-import { ApiError, RobloxOpenCloud } from "@roblox-open-cloud/sdk";
+import { ApiError, RobloxOpenCloud } from "roblox-open-cloud-sdk";
 
 function requireEnv(name: string): string {
   const value = process.env[name];

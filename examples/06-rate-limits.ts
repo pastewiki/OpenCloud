@@ -4,7 +4,7 @@
  * The SDK retries HTTP 429 automatically (honoring Retry-After), up to
  * `retry.maxAttempts`. When attempts run out, it throws RateLimitError.
  */
-import { RateLimitError, RobloxOpenCloud } from "@roblox-open-cloud/sdk";
+import { RateLimitError, RobloxOpenCloud } from "roblox-open-cloud-sdk";
 
 const roblox = RobloxOpenCloud.fromEnv({
   retry: { maxAttempts: 5, baseDelayMs: 1_000, maxRetryAfterMs: 30_000 },

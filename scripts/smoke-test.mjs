@@ -37,7 +37,7 @@ try {
 
   writeFileSync(
     join(app, "index.mjs"),
-    `import { RobloxOpenCloud, RateLimitError, Paginator } from "@roblox-open-cloud/sdk";
+    `import { RobloxOpenCloud, RateLimitError, Paginator } from "roblox-open-cloud-sdk";
 const client = new RobloxOpenCloud({ apiKey: "smoke-test-key-not-real", fetch: async () => new Response(JSON.stringify({ path: "universes/1" }), { status: 200 }) });
 const u = await client.universes.get({ universeId: 1 });
 if (u.path !== "universes/1") throw new Error("unexpected response");
@@ -49,7 +49,7 @@ console.log("ESM import OK");
 
   writeFileSync(
     join(app, "check.ts"),
-    `import { RobloxOpenCloud, type DataStoreEntry, type ApiError } from "@roblox-open-cloud/sdk";
+    `import { RobloxOpenCloud, type DataStoreEntry, type ApiError } from "roblox-open-cloud-sdk";
 const client = new RobloxOpenCloud({ apiKey: "x".repeat(20) });
 const entry: Promise<DataStoreEntry<{ coins: number }>> = client.dataStores.getEntry<{ coins: number }>({ universeId: "1", dataStoreId: "s", entryId: "k" });
 export type E = ApiError["status"];
