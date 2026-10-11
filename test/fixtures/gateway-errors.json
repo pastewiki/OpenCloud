@@ -1,0 +1,15 @@
+{
+  "_comment": "Bodies observed from apis.roblox.com on 2026-10-11 using no key or an obviously fake key. Status codes are recorded alongside.",
+  "invalidApiKey": {
+    "status": 401,
+    "body": { "errors": [{ "code": 0, "message": "Invalid API Key" }] }
+  },
+  "missingApiKeyHeader": {
+    "status": 401,
+    "body": { "errors": [{ "code": 0, "message": "Missing API Key Header" }] }
+  },
+  "invalidAuthenticationData": {
+    "status": 403,
+    "body": { "errors": [{ "code": 0, "message": "Invalid authentication data provided" }] }
+  }
+}
